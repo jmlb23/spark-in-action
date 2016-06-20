@@ -23,5 +23,12 @@ object App{
     //amosamos unha mostra de 5
     pushJson.show(5)
 
+    //agrupamolos polo campo
+    val gruped = pushJson.groupBy("actor.login")
+    //reducimos o agrupamento
+    val counted = gruped.count
+
+    //sacamos unha mostra de 5
+    counted.show(5)
   }
 }
